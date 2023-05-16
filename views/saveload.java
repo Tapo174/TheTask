@@ -9,8 +9,7 @@ public class saveload {
     protected final drawing currentDrawingService;
     private final String path;
 
-    public saveload
-(String path) {
+    public saveload(String path) {
         currentDrawingService = new drawing();
         this.path = path;
     }
@@ -49,7 +48,6 @@ public class saveload {
             System.out.println(ex.getMessage());
         }
     }
-
 
     public drawing currentDrawingService() {
         return this.currentDrawingService;

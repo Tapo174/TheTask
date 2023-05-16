@@ -19,10 +19,10 @@ public class App {
 
             command = prompt("""
 
-                     1 - Добавьте игрушку к рисунку
-                     2 - Удалить игрушку из рисунка
-                     3 - Сделайте рисунок (покажите результаты)
-                     4 - Покажите игрушки для рисования
+                     1 - Добавить игрушку
+                     2 - Удалить игрушку
+                     3 - Разыграть игрушку
+                     4 - Список игрушек
                      5 - Очистить все записи
                      6 - Сохраните все записи в файл
                      7 - Загрузите все записи из файла
@@ -55,7 +55,7 @@ public class App {
     }
 
     private static Toy toyCreate() {
-        int id = Integer.parseInt(prompt("Идентификатор игрушки: "));
+        int id = Integer.parseInt(prompt("ID: "));
         String name = prompt("Название игрушки: ");
         String weight = prompt("Вес игрушки: ");
         return (new Toy(id, name, Integer.parseInt(weight)));

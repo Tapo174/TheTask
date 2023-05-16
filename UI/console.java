@@ -34,7 +34,7 @@ public class console implements interfaces {
 
     @Override
     public void showAll(List<Toy> toys) {
-        System.out.println("\nВсе игрушки для рисования:");
+        System.out.println("\nВсе игрушки: ");
         for (Toy toy : toys) {
             System.out.println(toy);
         }
@@ -43,7 +43,7 @@ public class console implements interfaces {
 
     @Override
     public void showGetToy(Toy toy) {
-        System.out.print("\nРезультаты жеребьевки: ");
+        System.out.print("\nРезультаты розыгрыша: ");
         System.out.println(toy);
     }
 
@@ -84,7 +84,7 @@ public class console implements interfaces {
 
     @Override
     public int getDrawTimes() {
-        System.out.print("Сколько раз вы хотите нарисовать: ");
+        System.out.print("Сколько игрушек хотите разыграть?: ");
         return Integer.parseInt(in.nextLine());
     }
 }
