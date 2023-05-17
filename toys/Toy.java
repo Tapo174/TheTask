@@ -35,7 +35,7 @@ public class Toy implements Comparable<Toy> {
 
     @Override
     public String toString() {
-        return "Идентификатор игрушки:" + id + "; Имя: " + name + "; Вес: " + weight;
+        return "ID:" + id + "; Имя: " + name + "; Вес: " + weight;
     }
 
     @Override

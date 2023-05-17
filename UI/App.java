@@ -54,10 +54,10 @@ public class App {
         return in.nextLine();
     }
 
-    private static Toy toyCreate() {
-        int id = Integer.parseInt(prompt("ID: "));
-        String name = prompt("Название игрушки: ");
-        String weight = prompt("Вес игрушки: ");
-        return (new Toy(id, name, Integer.parseInt(weight)));
-    }
+    // private static Toy toyCreate() {
+    //     int id = Integer.parseInt(prompt("ID: "));
+    //     String name = prompt("Название игрушки: ");
+    //     String weight = prompt("Вес игрушки: ");
+    //     return (new Toy(id, name, Integer.parseInt(weight)));
+    // }
 }
